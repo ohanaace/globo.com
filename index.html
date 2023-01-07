@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Globo</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estiloglobo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;600;700&family=Orbitron&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cabecalho-maior">
+        <img class="logo"
+          src="data:image/png;base64,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"
+        />
+      </div>
+      <div class="cabecalho-menor">
+        <div class="menu">
+          <a href="https://globo.com" class="g1">
+            g1
+          </a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="o-globo">o globo</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="valor">valor</a>
+        </div>
+
+        <div class="menu">
+          <a href="https://globo.com" class="ge">ge</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="cartola">cartola</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="globoplay">globoplay</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="dropz">dropz</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="gshow">gshow</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="quem">quem</a>
+        </div>
+        <div class="menu">
+          <a href="https://globo.com" class="receitas">receitas</a>
+        </div>
+      </div>
+      <div class="noticias">
+        <div class="esquerda">
+          <a href="https://globo.com" class="principal">
+            Vacinados entrarão nos EUA sem quarentena a partir de 8 de novembro
+          </a>
+          <a href="https://globo.com" class="ministros-palhacos secundaria">
+            Ministros ‘lavam as mãos’ sobre Bolsonaro não se vacinar, relata
+            blog
+          </a>
+          <a href="https://globo.com" class="bandeiras secundaria">
+            Bandeiras em frente ao Congresso lembram 600 mil brasileiros mortos
+          </a>
+          <div class="borda-horizontal"></div>
+          <div class="grupo-noticias-esquerda">
+            <div class="noticias-politica">
+              <a href="https://globo.com">
+                <img
+                  class="foto-politica"
+                  src="./assets/alem-do-presidente.jpeg"
+              /></a>
+
+              <a href="https://globo.com" class="titulo-noticia"
+                >Além do Presidente</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                CPI deve pedir indiciamento de filhos de Bolsonaro</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia"
+                >A evangélicos, Bolsonaro diz ‘chorar sozinho em casa’</a
+              >
+            </div>
+            <div class="noticias-politica">
+              <a href="https://globo.com">
+                <img src="./assets/crimes-na-fronteira.jpeg"
+              /></a>
+              <a href="https://globo.com" class="titulo-noticia"
+                >Crimes na fronteira</a
+              >
+              <a href="https://globo.com" class="trecho-noticia"
+                >Triângulo amoroso vira chave em linha de investigação</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia"
+                >1ª de 7 mortes entre Brasil e Paraguai faz 1 semana</a
+              >
+            </div>
+            <div class="noticias-politica">
+              <a href="https://globo.com">
+                <img src="./assets/reino-unido.jpeg"
+              /></a>
+              <a href="https://globo.com" class="titulo-noticia"
+                >Reino Unido <br
+              /></a>
+              <a href="https://globo.com" class="trecho-noticia">
+                Parlamentar inglês é esfaqueado e morto em igreja
+              </a>
+              <a href="https://globo.com" class="sinopse-noticia"
+                >Homem de 25 anos foi preso no local, diz polícia</a
+              >
+            </div>
+          </div>
+          <div class="borda-horizontal"></div>
+          <div class="noticia-baixa-esquerda">
+            <div class="noticia-baixo">
+              <a href="https://globo.com" class="titulo-noticia">
+                Sabatina de Mendonça</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                PGR é consultada sobre investigação contra Alcolumbre</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia">
+                Aliados dizem que a situação de Alcolumbre 'está feia'</a
+              >
+            </div>
+            <div class="noticia-baixo">
+              <a href="https://globo.com" class="titulo-noticia">
+                Negócio de R$ 5,2 bi</a
+              >
+
+              <a href="https://globo.com" class="trecho-noticia">
+                Pão de Açúcar vende 71 pontos do Extra para o Assaí</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia">
+                Lembre fusões e aquisições bilionárias recentes no país</a
+              >
+            </div>
+            <div class="noticia-baixo">
+              <a href="https://globo.com" class="titulo-noticia">
+                Elo com caminhoneiros</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                Podcast: ministro liga empresários a atos de 7/9; ouça</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia">
+                Neto de Jango critica veto de Bolsonaro a tributo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="borda-vertical"></div>
+        <div class="direita">
+          <div class="noticias-esportivo">
+            <div class="esporte">
+              <a href="https://globo.com">
+                <img
+                  class="foto-direita"
+                  src="./assets/espiao-estatistico.jpeg"
+              /></a>
+              <a href="https://globo.com" class="verde-esporte"
+                >Espião estatístico</a
+              >
+              <a href="https://globo.com" class="trecho-noticia"
+                >Classificação do returno tem Palmeiras em último; veja as
+                posições
+              </a>
+              <a href="https://globo.com" class="sinopse-noticia"
+                >Crespo almoça com diretoria e deve se despedir no CT</a
+              >
+            </div>
+            <div class="esporte">
+              <a href="https://globo.com">
+                <img
+                  class="foto-direita"
+                  src="./assets/greve-segue-na-raposa.jpeg"
+              /></a>
+              <a href="https://globo.com" class="verde-esporte"
+                >Greve segue na Raposa</a
+              >
+              <a href="https://globo.com" class="trecho-noticia"
+                >Cruzeiro não viabiliza recurso para quitar atrasados
+              </a>
+            </div>
+            <div class="esporte">
+              <a href="https://globo.com">
+                <img
+                  class="foto-direita"
+                  src="./assets/campeonato-frances.jpeg"
+              /></a>
+              <a href="https://globo.com" class="verde-esporte"
+                >Campeonato francês</a
+              >
+              <a href="https://globo.com" class="trecho-noticia"
+                >Desfalcado, PSG recebe o Angers, 4º colocado
+              </a>
+            </div>
+          </div>
+          <div class="borda-vertical"></div>
+          <div class="noticia-entretenimento">
+            <div class="entretenimento">
+              <a href="https://globo.com"
+                ><img src="./assets/ferias-e-jh.jpeg" class="foto-direita" />
+              </a>
+              <a href="https://globo.com" class="laranja-entretenimento"
+                >Férias e JH</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                César Tralli se emociona na despedida do SP1
+              </a>
+            </div>
+            <div class="entretenimento">
+              <a href="https://globo.com"
+                ><img
+                  src="./assets/verdades-secretas-2.jpeg"
+                  class="foto-direita"
+                />
+              </a>
+              <a href="https://globo.com" class="laranja-entretenimento"
+                >Verdades Sceretas 2</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                Angel cruza a passarela poderosa; reveja desfiles
+              </a>
+              <a href="https://globo.com" class="sinopse-noticia"
+                >Blanche terá dois relacionamentos</a
+              >
+              <a href="https://globo.com" class="sinopse-noticia"
+                >Gabriel viverá sadomasoquista</a
+              >
+            </div>
+            <div class="entretenimento">
+              <a href="https://globo.com"
+                ><img
+                  src="./assets/nos-tempos-do-imperador.jpeg"
+                  class="foto-direita"
+                />
+              </a>
+              <a href="https://globo.com" class="laranja-entretenimento"
+                >Nos Tempos do Imperador</a
+              >
+              <a href="https://globo.com" class="trecho-noticia">
+                Lota vai cair em golpe
+              </a>
+              <a href="https://globo.com" class="sinopse-noticia"
+                >Teresa toma decisão radical</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
